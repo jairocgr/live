@@ -1,0 +1,15 @@
+spring:
+  flyway:
+    url: jdbc:postgresql://db:5432/taxi
+    user: postgres
+    password: postgres
+    schemas: live
+    locations: classpath:db/migration
+  datasource:
+    url: jdbc:postgresql://db:5432/taxi
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+server:
+  port: 8080
